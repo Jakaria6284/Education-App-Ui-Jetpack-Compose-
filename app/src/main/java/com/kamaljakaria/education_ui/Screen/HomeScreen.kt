@@ -65,29 +65,29 @@ import kotlin.random.Random
 
 @Composable
 fun HomePage() {
-   Column {
-       MyApp()
-       Moto()
-       lazyRoww()
-       featureLazy()
-       CategoryName()
-       CategoryLazy()
+    Column {
+        MyApp()
+        Moto()
+        lazyRoww()
+        featureLazy()
+        CategoryName()
+        CategoryLazy()
 
-   }
+    }
 }
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MyApp()
 {
     Column(
-       modifier = Modifier
-           .fillMaxWidth()
-           .height(200.dp)
-           .clip(shape = RoundedCornerShape(bottomStart = 30.dp, bottomEnd = 30.dp))
-           .background(
-               Color(0xFFF18FB0)
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(200.dp)
+            .clip(shape = RoundedCornerShape(bottomStart = 30.dp, bottomEnd = 30.dp))
+            .background(
+                Color(0xFFF18FB0)
 
-           ),
+            ),
         verticalArrangement = Arrangement.Top
     )
     {
@@ -105,7 +105,7 @@ fun MyApp()
                         color = Color.White
 
                     )
-                    )
+                )
                 Text(text = "Good Morning",
                     style = TextStyle(
                         fontSize = 25.sp,
@@ -115,7 +115,7 @@ fun MyApp()
                     )
                 )
 
-                }
+            }
             Spacer(modifier = Modifier.weight(1f))
 
             IconButton(onClick = { /*TODO*/ },
@@ -125,11 +125,11 @@ fun MyApp()
                     .padding(end = 12.dp)
                     .clip(shape = CircleShape)
                     .background(Color.White)
-                ) {
+            ) {
                 Icon(Icons.Filled.Face, contentDescription =null, tint = Color.Black )
 
             }
-            }
+        }
 
 
         OutlinedTextField(
@@ -155,7 +155,7 @@ fun MyApp()
                 .fillMaxWidth()
                 .height(180.dp)
                 .padding(20.dp)
-               ,
+            ,
             colors = TextFieldDefaults.colors(
                 unfocusedContainerColor = Color.White, // Set the background color to white
                 focusedContainerColor = Color.White, // Ensure the background stays white when focused
@@ -173,7 +173,7 @@ fun MyApp()
 
 
     }
-    }
+}
 
 @Composable
 fun Moto()
@@ -317,7 +317,7 @@ fun lazyRowFeatureitem(item:featureData)
                     }
                 }
 
-                imageloader()
+                imageloader(item)
             }
         }
     }
@@ -389,25 +389,25 @@ fun lazyRowCategoryitem(item:featureData)
 
         ){
 
-           
-                Column {
-                    imageloade2r()
 
-                    Text(text = "${item.name}",
-                        style = TextStyle(
-                            fontSize = 15.sp,
-                            fontWeight = FontWeight.Bold,
-                            color = Color.Black,
-                            textAlign = TextAlign.Center
+            Column {
+                imageloade2r(item)
 
-                        )
+                Text(text = "${item.name}",
+                    style = TextStyle(
+                        fontSize = 15.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.Black,
+                        textAlign = TextAlign.Center
+
                     )
-                    
+                )
 
 
 
-                    
-                }
+
+
+            }
 
         }
     }

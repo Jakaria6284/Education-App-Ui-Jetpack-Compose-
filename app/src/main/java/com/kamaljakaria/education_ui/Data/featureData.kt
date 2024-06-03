@@ -11,13 +11,14 @@ data class featureData(
 fun getallFeatureData():List<featureData>
 {
     return listOf<featureData>(
-        featureData("Arts&\nDrawing","$150", R.drawable.maritenisplayer_removebg_preview),
-        featureData("Math&\nPuzzle","$150", R.drawable.maritenisplayer_removebg_preview),
-        featureData("Science&\nExperiment","$120", R.drawable.maritenisplayer_removebg_preview),
-        featureData("Programing&\nDrawing","$350", R.drawable.maritenisplayer_removebg_preview),
-        featureData("Competitive&\nDrawing","$220", R.drawable.maritenisplayer_removebg_preview),
-        featureData("Arts&\nlearn","$100", R.drawable.maritenisplayer_removebg_preview),
-        featureData("Arts&\nDrawing","$120", R.drawable.maritenisplayer_removebg_preview), featureData("Arts&\nDrawing","$150", R.drawable.maritenisplayer_removebg_preview),
+        featureData("Arts&\nDrawing","$150", R.drawable.artsanddrwaing1),
+        featureData("Math&\nPuzzle","$150", R.drawable.mathpazzle1),
+        featureData("Science&\nExperiment","$120", R.drawable.science2),
+        featureData("Programing&\nDrawing","$350", R.drawable.mathpazzle1),
+        featureData("Competitive&\nDrawing","$220", R.drawable.mathpazzle1),
+        featureData("Arts&\nlearn","$100", R.drawable.artsanddrwaing1),
+        featureData("Arts&\nDrawing","$120", R.drawable.artsanddrwaing1),
+        featureData("Arts&\nDrawing","$150", R.drawable.mathpazzle1),
 
 
     )

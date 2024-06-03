@@ -46,20 +46,20 @@ class MainActivity : ComponentActivity() {
     }
 
 @Composable
-fun imageloader()
+fun imageloader(item:featureData)
 {
     Image(
-        painter = painterResource(id = R.drawable.maritenisplayer_removebg_preview),
+        painter = painterResource(id = item.image),
         contentDescription = "Your content description",
         contentScale = ContentScale.Crop
     )
 }
 
 @Composable
-fun imageloade2r()
+fun imageloade2r(item:featureData)
 {
     Image(
-        painter = painterResource(id = R.drawable.maritenisplayer_removebg_preview),
+        painter = painterResource(id = item.image),
         contentDescription = "Your content description",
        modifier = Modifier.height(130.dp),
        contentScale = ContentScale.Fit,
